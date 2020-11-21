@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+fieldset{
+    position: relative;
+    width: 40%;
+    height:180px;
+    margin: auto;
+    top: 25%;
+    border: 0;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+fieldset img{
+    width: 30%;
+    margin-bottom: -10%;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 80%;
+}
+fieldset form{
+    padding: 10px;
+    text-align: center;
+}
+fieldset form .cpf, 
+fieldset form .votar {
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: -15%;
+}
+fieldset form .cpf h1{
+    font-size: 30px;
+    margin-top: -18%;
+    margin-bottom: 5px;
+    color: rgba(17, 189, 237,0.5);
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 12s steps(40) 1s normal infinite;
+
+
+}
+fieldset form .votar h1{
+    font-size: 18px;
+    margin-top: -18%;
+    margin-bottom: 5px;
+    color: #088a76;
+    font-family: "Poppins", sans-serif;
+
+}
+
+fieldset form .cpf input[type="number"]{
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    border: white;
+    border-bottom: 2px solid rgba(9, 186, 235,0.5);
+    font-size: 18px;
+
+    
+}
+fieldset form .votar input[type="number"]{
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    border: white;
+    border-bottom: 2px solid rgba(5, 156, 133,0.5);
+    font-size: 12px
+}
+.input-icon{
+    color:#029ec9;
+    width: 50%;
+    height: 25px;
+} 
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+fieldset form .cpf input[type="submit"]{
+    width: 90%;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    border: 0;
+    color: #11bded;
+    cursor: pointer;
+    transition: 2s;
+}
+fieldset form .votar input[type="button"]{
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    border: 0;
+    color: #088a76;
+    cursor: pointer;
+}
+fieldset form .cpf input[type="submit"]:hover{
+    background: rgba(0,0,0,0.5);
+    color: #04c477;
+}
+.text{
+    border-top: 1px solid #CCC;
+    margin-top: 6px;
+    padding: 2px;
+    width: 90%;
+    margin-left: 10%;
+    font-size: 10px;
+    text-align: center;
+
+}
+.text a{
+    text-decoration: none;
+    color: #029ec9;
+}
+.text a:hover{
+    color:black;
+}
+
+.typing-animation {
+    animation: typing 12s steps(40) 1s normal infinite;
+  }
+
+#confirme, 
+#confirme1,
+#confirme2,
+#confirme3{
+    display: none;
+}
+
+
+@keyframes typing {
+from {
+    width: 0;
+}
+to {
+    width: 8em;
+}
+}

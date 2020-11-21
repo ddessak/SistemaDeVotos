@@ -1,0 +1,65 @@
+.iris img,
+.vanderlan img,
+.maguito img, 
+.branco img{
+    width: 100px;
+    height: 140px;
+    margin-right: 80%;
+    opacity: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+
+}
+.confirme h1,
+.confirme1 h1,
+.confirme2 h1,
+.confirme3 h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    margin-left: 25%;
+    margin-top: -15%;
+    color: #088a76;
+
+
+}
+.confirme input[type=submit],
+.confirme1 input[type=submit],
+.confirme2 input[type=submit],
+.confirme3 input[type=submit]{
+    width: 25%;
+    height: 30px;
+    margin-left: 25%;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #04c477;
+    font-size: 15px;
+}
+.confirme input[type=button],
+.confirme1 input[type=button],
+.confirme2 input[type=button],
+.confirme3 input[type=button]{
+    width: 25%;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ff2200;
+    font-size: 15px;
+    
+}
+.confirme input[type=submit]:hover,
+.confirme1 input[type=submit]:hover,
+.confirme2 input[type=submit]:hover,
+.confirme3 input[type=submit]:hover, 
+.confirme input[type=button]:hover,
+.confirme1 input[type=button]:hover,
+.confirme2 input[type=button]:hover,
+.confirme3 input[type=button]:hover{
+    background: rgba(0,0,0,0.5);
+}
