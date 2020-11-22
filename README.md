@@ -8,4 +8,4 @@ Esses sistema foi desolvido durante um projeto de final de semestre que foi prop
 <br>
 <a href="https://github.com/Maxuell123"> Maxuell Lima</a>
 <br>
-<a href="">Adriel Resende</a>
+<a href="https://github.com/adrielresende"> Adriel Resende</a>
