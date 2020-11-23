@@ -34,20 +34,32 @@
             google.charts.setOnLoadCallback(drawChart);
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Iris Resende',<?php echo("$iris");?>],
-                ['Vanderlan Cardoso',<?php echo("$vanderlan");?>],
-                ['Maguito Vilela',<?php echo("$maguito");?>],
-                ['Branco',<?php echo("$branco");?>]
+
+                    ["Element", "Density", { role: "style" } ],
+                    ['Iris Resende   ',<?php echo("$iris");?>, "#0a0036"],
+                    ['Vanderlan Cardoso   ',<?php echo("$vanderlan");?>,"#0c059c"],
+                    ['Maguito Vilela   ',<?php echo("$maguito");?>,"#0015ff"],
+                    ['Branco   ',<?php echo("$branco");?>,"#0385ff"]
                 ]);
 
+                    var view = new google.visualization.DataView(data);
+                    view.setColumns([0, 1,
+                        { calc: "stringify",
+                            sourceColumn: 1,
+                            type: "string",
+                            role: "annotation" },
+                        2]);
+                
                 var options = {
-                title: 'Eleições 2020',
-                is3D: true,
+                    title: 'Eleições 2020',
+                    width: 600,
+                    height: 400,
+                    bar: {groupWidth: "95%"},
+                    legend: { position: "none" },
                 };
 
-                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-                chart.draw(data, options);
+                var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+                chart.draw(view, options);
             }
         </script>
 
@@ -69,6 +81,7 @@
         <div class="image">
             <img src="../image/data-x1.png" alt="">
         </div><!--image-->
-        <div id="piechart_3d" style="width:700px; height:500px;"></div>
+        <div id = "barchart_values" style = "width: 900px; height: 300px;"> </div>
+
     </body>
 </html>
